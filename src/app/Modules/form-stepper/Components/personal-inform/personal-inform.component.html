@@ -1,0 +1,60 @@
+<div class="my-2">
+  <h4>Personal Information</h4>
+  <hr>
+</div>
+<div class="row">
+  <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+    <mat-form-field appearance="legacy">
+      <mat-label>Person Name</mat-label>
+      <input matInput required>
+    </mat-form-field>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+    <mat-form-field appearance="legacy">
+      <mat-label>Date of Brith</mat-label>
+      <input matInput required>
+    </mat-form-field>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+    <mat-form-field appearance="legacy">
+      <mat-label>Mobile Number</mat-label>
+      <input matInput required>
+    </mat-form-field>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+    <mat-form-field appearance="legacy">
+      <mat-label>Email Id</mat-label>
+      <input matInput required>
+    </mat-form-field>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+    <mat-form-field appearance="legacy">
+      <mat-label>Wilayat</mat-label>
+      <input matInput required>
+    </mat-form-field>
+  </div>
+</div>
+
+<div class="my-2">
+  <h4>Document Upload</h4>
+  <hr>
+</div>
+<div class="my-2">
+  <input style="display: none;" type="file" #accidentfileInput multiple>
+  <div id="container" (click)="accidentfileInput.click()">
+    <div class="center">
+      <i class="far fa-images"></i> Drag or Click
+    </div>
+  </div>
+</div>
+
+<div class="my-2">
+  <h4>Proposal Form</h4>
+  <hr>
+</div>
+<div class="my-2">
+  <div class="text-center">
+    <h1><i class="fas fa-download"></i></h1><br>
+    <button class="mx-2" matStepperNext mat-raised-button color="primary">Download Form</button>
+  </div>
+</div>

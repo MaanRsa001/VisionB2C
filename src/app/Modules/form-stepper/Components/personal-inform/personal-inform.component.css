@@ -1,0 +1,6 @@
+#container {
+  width: 100%;
+  border: 3px dotted #cccc;
+  height: 100px;
+  position: relative;
+}

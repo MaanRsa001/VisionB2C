@@ -1,0 +1,473 @@
+<div class="text-center my-2">
+  <button mat-button color="primary" class="border-end" [mdePopoverTriggerFor]="appPopover" mdePopoverTriggerOn="click">
+    <i class="fas fa-car"></i>
+    Vehicle Information
+  </button>
+  <button mat-button color="primary" class="border-end" [mdePopoverTriggerFor]="appPopover1"
+    mdePopoverTriggerOn="click">
+    <i class="fas fa-id-card"></i>
+    Licence Information
+  </button>
+  <button mat-button color="primary" class="border-end" [mdePopoverTriggerFor]="appPopover2"
+    mdePopoverTriggerOn="click">
+    <i class="fas fa-car-crash"></i>
+    Accident details
+  </button>
+</div>
+
+
+
+
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="card vehicle-edit-card">
+      <div class="card-header vehicle-edit-card-header">
+        <div class="float-left py-2">
+          Vehicle Details
+        </div>
+        <div class="float-right">
+          <button mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
+            <mat-icon>edit</mat-icon>
+          </button>
+        </div>
+      </div>
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <div class="float-left">Plate Char/Plate No</div>
+            <div class="float-right">6696</div>
+          </li>
+          <li class="list-group-item">
+            <div class="float-left">Make</div>
+            <div class="float-right">Honda</div>
+          </li>
+          <li class="list-group-item">
+            <div class="float-left">Model</div>
+            <div class="float-right">I20</div>
+          </li>
+          <li class="list-group-item">
+            <div class="float-left">Trim</div>
+            <div class="float-right">.</div>
+          </li>
+          <li class="list-group-item">
+            <div class="float-left">Engine No</div>
+            <div class="float-right">TFBHB66963536</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-12">
+    <div class="card Comprehensive-Card">
+      <div class="card-header Comprehensive-Card-Header">
+        <div class="d-flex justify-content-between">
+          <div style="margin: auto 0;">Private Comprehensive</div>
+          <div style="margin: auto 0;">
+            <p style="margin:10px 0 10px" class="card-price">OMR 1250.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-header child-header">
+        <div>
+          <div class="row">
+            <div class="col-12 col-md-5 col-lg-5">
+              <div class="child-title">Insured Cover</div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-5">
+              <div class="child-title">Benefit</div>
+            </div>
+            <div class="col-12 col-md-2 col-lg-2">
+              <div class="child-title">Addon</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body p-1">
+        <div class="row">
+          <div class="col-12 col-md-5 col-lg-5">
+            <ul class="list-group list-group-flush benefitscrad">
+              <li class="list-group-item">
+                <mat-icon>done</mat-icon> Person Liability Passengers 8
+              </li>
+              <li class="list-group-item">
+                <mat-icon>done</mat-icon> Personal Accident Cover For Driver Only
+              </li>
+              <li class="list-group-item">
+                <mat-icon>done</mat-icon> Medex
+              </li>
+              <li class="list-group-item">
+                <mat-icon>done</mat-icon> Road Accident
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-5 col-lg-5">
+            <ul class="list-group list-group-flush benefitscrad">
+              <li class="list-group-item">
+                <mat-icon>done</mat-icon> Motor Comprehensive Basic
+              </li>
+              <li class="list-group-item">
+                <mat-icon>done</mat-icon> Motor Third Party Liability
+              </li>
+              <li class="list-group-item">
+                <mat-icon>done</mat-icon> Third Party Fire and Theft Cover
+              </li>
+              <li class="list-group-item">
+                <mat-icon>done</mat-icon> Fourth item
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-2 col-lg-2">
+            <div class="py-4 px-1 text-center">
+              <button mat-mini-fab color="accent" [mdePopoverTriggerFor]="appPopover3" mdePopoverTriggerOn="click"
+                aria-label="Example icon button with a plus one icon">
+                <mat-icon>library_add</mat-icon>
+              </button>
+              <label>Addon Covers</label>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="card Comprehensive-Card">
+      <div class="card-header Comprehensive-Card-Header">
+        <div class="d-flex justify-content-between">
+          <div style="margin: auto 0;">Private Third Party Liability</div>
+          <div style="margin: auto 0;">
+            <p style="margin:10px 0 10px" class="card-price">OMR 550.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-header child-header">
+        <div>
+          <div class="row">
+            <div class="col-12 col-md-5 col-lg-5">
+              <div class="child-title">Insured Cover</div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-5">
+              <div class="child-title">Benefit</div>
+            </div>
+            <div class="col-12 col-md-2 col-lg-2">
+              <div class="child-title">Addon</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body p-1">
+        <div class="row">
+          <div class="col-12 col-md-5 col-lg-5">
+            <ul class="list-group list-group-flush benefitscrad">
+              <li class="list-group-item">
+                <mat-icon>done</mat-icon> Person Liability Passengers 8
+              </li>
+              <li class="list-group-item">
+                <mat-icon>done</mat-icon> Personal Accident Cover For Driver Only
+              </li>
+              <li class="list-group-item">
+                <mat-icon>done</mat-icon> Medex
+              </li>
+              <li class="list-group-item">
+                <mat-icon>done</mat-icon> Road Accident
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-5 col-lg-5">
+            <ul class="list-group list-group-flush benefitscrad">
+              <li class="list-group-item">
+                <mat-icon>done</mat-icon> Motor Comprehensive Basic
+              </li>
+              <li class="list-group-item">
+                <mat-icon>done</mat-icon> Motor Third Party Liability
+              </li>
+              <li class="list-group-item">
+                <mat-icon>done</mat-icon> Third Party Fire and Theft Cover
+              </li>
+              <li class="list-group-item">
+                <mat-icon>done</mat-icon> Fourth item
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-2 col-lg-2">
+            <div class="py-4 px-1 text-center">
+              <button mat-mini-fab color="accent" [mdePopoverTriggerFor]="appPopover3" mdePopoverTriggerOn="click"
+                aria-label="Example icon button with a plus one icon">
+                <mat-icon>library_add</mat-icon>
+              </button>
+              <label>Addon Covers</label>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+<mde-popover mdePopoverPositionY="above" #appPopover="mdePopover" [mdePopoverOverlapTrigger]="false"
+  [mdePopoverCloseOnClick]="false">
+  <mat-card>
+    <mat-card-content>
+      <h4>Vehcile Information</h4>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-md-6">
+              Sum Insured
+            </div>
+            <div class="col-md-6">
+              90000000
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-md-6">
+              Chassis No
+            </div>
+            <div class="col-md-6">
+              T910DSH
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-md-6">
+              Vehicle Make
+            </div>
+            <div class="col-md-6">
+              MITSUBISHI FUSO
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-md-6">
+              Model
+            </div>
+            <div class="col-md-6">
+              N/A
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-md-6">
+              Body Type
+            </div>
+            <div class="col-md-6">
+              008
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-md-6">
+              Year.of.Manuf
+            </div>
+            <div class="col-md-6">
+              1996
+            </div>
+          </div>
+        </li>
+      </ul>
+    </mat-card-content>
+  </mat-card>
+</mde-popover>
+<mde-popover mdePopoverPositionY="above" #appPopover1="mdePopover" [mdePopoverOverlapTrigger]="false"
+  [mdePopoverCloseOnClick]="false">
+
+  <mat-card style="width: 500px">
+    <mat-card-content>
+      <h4>Licence Information</h4>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-md-6">
+              Driver Name
+            </div>
+            <div class="col-md-6">
+              Driver
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-md-6">
+              Driver Gender
+            </div>
+            <div class="col-md-6">
+              Male
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-md-6">
+              Driver DOB
+            </div>
+            <div class="col-md-6">
+              13/12/2000
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-md-6">
+              Driver Mobile
+            </div>
+            <div class="col-md-6">
+              +255 94645454878
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-md-6">
+              Road Condition
+            </div>
+            <div class="col-md-6">
+              Dry
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-md-6">
+              License Number
+            </div>
+            <div class="col-md-6">
+              12345678
+            </div>
+          </div>
+        </li>
+      </ul>
+    </mat-card-content>
+  </mat-card>
+</mde-popover>
+<mde-popover mdePopoverPositionY="above" #appPopover2="mdePopover" [mdePopoverOverlapTrigger]="false"
+  [mdePopoverCloseOnClick]="false">
+  <mat-card style="width: 500px">
+    <mat-card-content>
+      <h4>Accident Information</h4>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-md-6">
+              Accident Date
+            </div>
+            <div class="col-md-6">
+              04/01/2022
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-md-6">
+              Accident Time
+            </div>
+            <div class="col-md-6">
+              12:51
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-md-6">
+              Road Surface
+            </div>
+            <div class="col-md-6">
+              Bituminous Road
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-md-6">
+              Visibility
+            </div>
+            <div class="col-md-6">
+              Cold and Cloudy
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-md-6">
+              Road Condition
+            </div>
+            <div class="col-md-6">
+              Dry
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-md-6">
+
+            </div>
+            <div class="col-md-6">
+
+            </div>
+          </div>
+        </li>
+      </ul>
+    </mat-card-content>
+  </mat-card>
+</mde-popover>
+<mde-popover mdePopoverPositionY="above" #appPopover3="mdePopover" [mdePopoverOverlapTrigger]="false"
+  [mdePopoverCloseOnClick]="false">
+  <mat-card style="width: 700px">
+          <div class="addon-grid">
+            <div class="card">
+              <div class="card-header">
+                <mat-checkbox class="example-margin mx-1"></mat-checkbox>
+                <span class="text-primary">Car Replacement Services or Car Rental</span>
+              </div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush addon-list-grup">
+                  <li class="list-group-item">
+                    <i class="fas fa-chevron-right"></i>
+                    Substitute vehicle during repair for specified durations opted
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <mat-checkbox class="example-margin mx-1"></mat-checkbox>
+                <span class="text-primary">Routine Maintenance Trips-Pickup & Drop</span>
+              </div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush addon-list-grup">
+                  <li class="list-group-item">
+                    <i class="fas fa-chevron-right"></i>
+                    Ww wil arrange to pick up your vehicle from you and take it to the serivce
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <mat-checkbox class="example-margin mx-1"></mat-checkbox>
+                <span class="text-primary">Agency Repair with new Original parts Cover</span>
+
+              </div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush addon-list-grup">
+                  <li class="list-group-item">
+                    <i class="fas fa-chevron-right"></i>
+                    Ww wil arrange to pick up your vehicle from you and take it to the serivce
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+  </mat-card>
+</mde-popover>

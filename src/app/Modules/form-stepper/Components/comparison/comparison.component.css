@@ -1,0 +1,152 @@
+.addon-grid {
+  background: white;
+  grid-area: main;
+  border-radius: 1rem;
+  padding: 8px;
+  display: grid;
+  grid-auto-rows: auto;
+  grid-gap: 15px;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border: none;
+}
+.list-group-item {
+  padding: 0 !important;
+}
+.Comprehensive-Card .Comprehensive-Card-Header {
+  background-color: #673ab7;
+  color: ghostwhite;
+  font-size: 19px;
+  font-weight: 500;
+}
+.child-header {
+  padding-left: 200px !important;
+  background-color: #6ab070;
+}
+.child-title {
+  font-weight: bold;
+  font-size: 17px;
+  padding: 0 18px;
+}
+.Comprehensive-Card {
+  margin: 0.5rem 0;
+}
+.Comprehensive-Card .card-body {
+  min-height: 150px;
+  background-image: url("../../../../../assets/images/car-bg_png.png");
+  background-repeat: no-repeat;
+  background-size: 170px;
+  background-position: left top;
+  padding-left: 170px !important;
+}
+.benefitscrad {
+  height: 138px;
+  overflow: auto;
+  overflow-y: scroll;
+}
+.vehicle-edit-card{
+  margin: 0.5rem 0;
+
+}
+.float-left{
+float: left;
+}
+.float-right{
+float: right;
+}
+.vehicle-edit-card-header{
+  background-color: #673ab7;
+  color: ghostwhite;
+  font-size: 19px;
+  font-weight: 500;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .addon-grid {
+    grid-template-columns:  1fr 1fr;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .addon-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .addon-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .addon-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .addon-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.card-price {
+  display: inline-block;
+  width: auto;
+  height: 38px;
+  background-color: #6ab070;
+  -webkit-border-radius: 3px 4px 4px 3px;
+  -moz-border-radius: 3px 4px 4px 3px;
+  border-radius: 3px 4px 4px 3px;
+  border-left: 1px solid #6ab070;
+  /* This makes room for the triangle */
+  margin-left: 19px;
+  position: relative;
+  color: white;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+  padding: 0 10px 0 10px;
+}
+
+/* Makes the triangle */
+.card-price:before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: -19px;
+  width: 0;
+  height: 0;
+  border-top: 19px solid transparent;
+  border-bottom: 19px solid transparent;
+  border-right: 19px solid #6ab070;
+}
+
+/* Makes the circle */
+.card-price:after {
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  display: block;
+  position: absolute;
+  left: -9px;
+  top: 17px;
+}
+.addon-grid .card-header{
+  overflow-wrap: break-word;
+}
+.example-margin .mat-checkbox-layout{
+  white-space:break-spaces !important;
+}
+.addon-list-grup .list-group-item{
+padding: 0;
+}

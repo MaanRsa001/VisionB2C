@@ -1,0 +1,93 @@
+<form [formGroup]="vehicleInfoForm">
+  <div class="row">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+          <mat-form-field appearance="legacy">
+            <mat-label>Plate No</mat-label>
+            <input matInput placeholder="Type here..." formControlName="plateNo" required>
+          </mat-form-field>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+          <mat-form-field appearance="legacy">
+            <mat-label>Char</mat-label>
+            <input matInput placeholder="Type here..." formControlName="char" required>
+          </mat-form-field>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+          <mat-form-field appearance="legacy">
+            <mat-label>Civil Id</mat-label>
+            <input matInput placeholder="Type here..." formControlName="civilId" required>
+          </mat-form-field>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+          <mat-form-field appearance="legacy">
+            <mat-label>Geographical extension</mat-label>
+            <input matInput placeholder="Type here..." formControlName="geographicalExt" required>
+          </mat-form-field>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+          <mat-form-field appearance="legacy">
+            <mat-label>Sum Insured</mat-label>
+            <input matInput placeholder="Type here..." formControlName="suminsured" required>
+          </mat-form-field>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+          <mat-form-field appearance="legacy">
+            <mat-label>Tonne</mat-label>
+            <input matInput placeholder="Kg..." formControlName="suminsured" required>
+            <mat-hint>Heavy Vehicle</mat-hint>
+          </mat-form-field>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+          <mat-form-field appearance="legacy">
+            <mat-label>Mobile Number</mat-label>
+            <input matInput placeholder="Type here..." formControlName="MobileNo" required>
+          </mat-form-field>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+          <mat-form-field appearance="legacy">
+            <mat-label>NCD</mat-label>
+            <input matInput placeholder="" required>
+          </mat-form-field>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4 my-3">
+            <label>Vehicle From</label><br>
+            <mat-radio-group aria-label="Select an option">
+              <mat-radio-button value="1">Imported</mat-radio-button>
+              <mat-radio-button value="2">Local</mat-radio-button>
+            </mat-radio-group>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4 my-3">
+              <label>Whether this vehicle is owned by Company </label><br>
+              <mat-radio-group aria-label="Select an option">
+                <mat-radio-button value="1">Yes</mat-radio-button>
+                <mat-radio-button value="2">No</mat-radio-button>
+              </mat-radio-group>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4 my-3">
+              <label>Visa Status</label><br>
+              <mat-radio-group aria-label="Select an option">
+                <mat-radio-button value="1">Omani</mat-radio-button>
+                <mat-radio-button value="2">Expat</mat-radio-button>
+              </mat-radio-group>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4 my-3">
+              <label>Gender</label><br>
+              <mat-radio-group aria-label="Select an option">
+                <mat-radio-button value="1">Male</mat-radio-button>
+                <mat-radio-button value="2">Female</mat-radio-button>
+              </mat-radio-group>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</form>

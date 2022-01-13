@@ -1,0 +1,224 @@
+<header id="header" class="fixed-top d-flex align-items-center">
+  <div class="container d-flex align-items-center justify-content-between">
+    <div class="logo">
+      <a href="index.html">
+        <img src="../../../../../assets/images/logo-jpg.jpg" alt="" class="img-fluid">
+      </a>
+    </div>
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="active" [routerLink]="['/']" routerLinkActive="router-link-active">Home</a></li>
+        <li><a [routerLink]="['/']" routerLinkActive="router-link-active">About</a></li>
+        <li><a [routerLink]="['/']" routerLinkActive="router-link-active">Services</a></li>
+        <li><a [routerLink]="['/']" routerLinkActive="router-link-active">Contact</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+  </div>
+</header>
+
+<section id="hero">
+  <div class="hero-container" data-aos="fade-up">
+    <h1>Welcome to Vision Insurance</h1>
+    <h2>The term "vision insurance" is commonly used to describe health and wellness plans</h2>
+    <a [routerLink]="['/routePath']" routerLinkActive="router-link-active" class="btn-get-started scrollto">Get
+      Started</a>
+  </div>
+</section>
+
+<main id="main">
+
+  <section id="about" class="about">
+    <div class="container">
+      <mat-stepper labelPosition="bottom" #stepper>
+        <mat-step [stepControl]="vehicleInfoForm" optional>
+          <form [formGroup]="vehicleInfoForm">
+            <ng-template matStepLabel>Vehicle Details</ng-template>
+            <div class="card vehcile-info-card">
+              <div class="card-header"> Vehicle Details</div>
+              <div class="card-body">
+                <app-vehicle-inform [vehicleInfoForm]="vehicleInfoForm">
+                </app-vehicle-inform>
+              </div>
+            </div>
+            <div class="form-stepper-btn">
+              <button mat-button matStepperNext mat-raised-button color="primary">Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step [stepControl]="comparisonForm" optional>
+          <form [formGroup]="comparisonForm">
+            <ng-template matStepLabel>Comparison</ng-template>
+            <mat-card class="my-mat-card mt-2 form-card">
+              <app-comparison></app-comparison>
+            </mat-card>
+            <div class="form-stepper-btn">
+              <button mat-button matStepperPrevious mat-raised-button color="warn" class="mx-2">Back</button>
+              <button mat-button matStepperNext mat-raised-button color="primary" class="mx-2">Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step optional>
+          <ng-template matStepLabel>Personal Information</ng-template>
+          <mat-card class="my-mat-card mt-2 form-card">
+            <app-personal-inform></app-personal-inform>
+
+          </mat-card>
+          <div class="form-stepper-btn">
+            <button class="mx-2" matStepperPrevious mat-raised-button color="warn">Back</button>
+            <button class="mx-2" matStepperNext mat-raised-button color="primary">Next</button>
+          </div>
+          <div>
+          </div>
+        </mat-step>
+      </mat-stepper>
+    </div>
+  </section>
+</main>
+<div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="1"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container first-slider">
+        <div class="title">PRIVATE VEHICLE INSURANCE</div>
+        <div class="child-title">Motor/Car Insurance (Comprehensive or Third Party)</div>
+        <div class="carousel-grid">
+          <div class="grid-item">
+
+          </div>
+          <div class="grid-item">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <i class="fas fa-arrow-right mx-1"></i> Get Comprehensive or Third Party Motor Insurance for Private Cars under 4 minutes/online secure payment
+                and online renewal
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-arrow-right mx-1"></i> 5% Additional ONLINE only Discount*
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-arrow-right mx-1"></i> Optional: UAE Cover with Orange Card, Off Road Cover for SUVs, Agency Repairs and many more
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-arrow-right mx-1"></i> 24/7 emergency hotline for roadside assistance FREE including towing after accident
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-arrow-right mx-1"></i> Customize to your needs at the lowest costs.
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-arrow-right mx-1"></i> Why wait, click anywhere here and get a quote within seconds...
+              </li>
+
+            </ul>
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container second-slider">
+        <div class="title">COMMERCIAL VEHICLE INSURANCE</div>
+        <div class="child-title">Commercial Heavy Vehciles (Comprehensive or Third Party)</div>
+        <div class="carousel-grid">
+          <div class="grid-item">
+
+          </div>
+          <div class="grid-item">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <i class="fas fa-arrow-right mx-1"></i>
+                Get Comprehensive or Third Party Motor Insurance for Private Cars under 4 minutes/online secure payment
+                and online renewal
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-arrow-right mx-1"></i> 5% Additional ONLINE only Discount*
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-arrow-right mx-1"></i> Optional: UAE Cover with Orange Card, Off Road Cover for SUVs, Agency Repairs and many more
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-arrow-right mx-1"></i> 24/7 emergency hotline for roadside assistance FREE including towing after accident
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-arrow-right mx-1"></i> Customize to your needs at the lowest costs.
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-arrow-right mx-1"></i> Why wait, click anywhere here and get a quote within seconds...
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev text-dark" type="button" data-bs-target="#mycarousel" data-bs-slide="prev">
+    <i class="fas fa-chevron-circle-left"></i>
+  </button>
+  <button class="carousel-control-next text-dark" type="button" data-bs-target="#mycarousel" data-bs-slide="next">
+    <i class="fas fa-chevron-circle-right"></i>
+  </button>
+</div>
+
+
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-info">
+          <h3>VISION INSURANCE</h3>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta
+            donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet
+            volutpat consequat mauris nunc congue.</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h4>Contact Us</h4>
+          <p>
+            A108 Adam Street <br>
+            New York, NY 535022<br>
+            United States <br>
+            <strong>Phone:</strong> +1 5589 55488 55<br>
+            <strong>Email:</strong> info@example.com<br>
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam
+            minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+          <form action="" method="post">
+            <input type="email" name="email"><input type="submit" value="Subscribe">
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</footer>
